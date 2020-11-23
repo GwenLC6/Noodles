@@ -1,0 +1,201 @@
+body {
+    /* Change the font of everything within the body to Roboto */
+    font-family: 'Crimson Text', sans-serif;
+    /* Get rid of any browser default margin on the body */
+    margin: 0;
+}
+
+img {
+    /* By default, we want all images to take up 100% of its container */
+    width: 100%;
+}
+
+p {
+    /* By default, we want all text to be justified rather than the standard left-align */
+    text-align: justify;
+}
+
+.page-layout {
+    /*
+    Our page will be laid out using the grid display.
+    See: https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids
+    */
+    display: grid;
+    grid-template-columns:
+        /* We want the left and right columns to have proportional width */
+        1fr
+        /*
+        The center column should either be 85 characters wide, or 100% of the page.
+        We choose whichever is smallest.
+        Any more than about 100 characters per line becomes very difficult to read.
+        */
+        min(85ch, 100%)
+        1fr;
+    padding-bottom: 50px;
+}
+
+/*
+This says for ANY child of the page-layout class (i.e. anything inside a div with this class),
+put that element in the second column of our grid (i.e. put it in the middle)
+*/
+.page-layout > * {
+    grid-column: 2;
+}
+
+/*
+We want the cover to appear in the center of the page, and have everything in it centered
+*/
+.cover {
+    z-index: 1;
+
+    /* Since we have z-index 1, the absolute position will now be relative to the page */
+    position: absolute;
+    /* We make these 0 because we're using the margin to center this element */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    /* This element will now have a fixed height of 300px */
+    height: 300px;
+
+    /*
+    This tells the browser to select the margin for us on all sides.
+    Since our element has a fixed height, the browser will fill up the remaining space with margins.
+    */
+    margin: auto;
+
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.big-button {
+    /*
+    We're applying this class to <a/> elements rather than actual <button/> elements,
+    so we allow them to have width and height by setting their display to inline-block.
+    */
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    border: 0.1em solid #fff;
+    border-radius: 0.12em;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    /* We want a slightly slower hover transition for effect */
+    transition: all 0.2s;
+}
+
+/* This style is only applied when the 'button' is being hovered over by the mouse */
+.big-button:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 60, 0, 0.651);
+}
+
+/* Any element with this class will take up all the grid columns and 100% of the page */
+.full-bleed {
+    grid-column: 1 / -1;
+    width: 100%
+}
+
+.header {
+    grid-column: 1 / -1;
+    /* Our header will use flex to align its items */
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 0 50px;
+    margin-bottom: 1.5rem;
+    background-color: #3d1201ee;
+
+}
+
+.site-name {
+    color: #fff;
+    font-size: 24px;
+}
+
+.menu {
+    /* Make sure that the menu is all the way to the right by filling any space with a margin */
+    margin-left: auto;
+}
+
+.menu-items {
+    /* We're going to override the normal anchor (link) style */
+    list-style: none;
+    text-align: center;
+    color: #fff;
+}
+
+.menu-item {
+    /* These would normally be block elements because they're in a list */
+    display: inline;
+    margin-right: 10px;
+    font-size: 22px;
+}
+
+.menu-item > a {
+    display: inline;
+    text-decoration: none;
+    color: rgba(255, 255, 255, .5);
+    border-bottom: .25rem solid transparent;
+}
+
+.menu-item > a:hover {
+    border-bottom-color: rgba(255, 255, 255, .5);
+}
+
+.active > a {
+    color: #fff;
+    border-bottom-color: #fff;
+}
+
+.blog-post-summary {
+    border-bottom: .1rem solid black;
+    padding-bottom: 1rem;
+}
+
+.blog-post-summary:last-child {
+    border-bottom: none;
+}
+
+.post-date {
+    color: #999;
+}
+
+.post-date > a {
+    text-decoration: none;
+    color: #2200CC;
+}
+
+.post-preview {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+.blog-post-link {
+    display: inline-block;
+    padding: .5rem 1rem;
+    border: 0.1em solid #000;
+    border-radius: 0.12em;
+    text-decoration: none;
+    color: #000;
+    transition: all 0.2s;
+}
+
+.blog-post-link:hover {
+    color: #fff;
+    background-color: #000;
+}
+img.opacity {
+    opacity: 1;
+    filter: alpha(opacity=100); /* IE8 and lower */
+    zoom: 1; /* Triggers "hasLayout" in IE 7 and lower */
+  }
+  
+  img.opacity:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    zoom: 1;
+  }
