@@ -17,5 +17,12 @@ function hasIngredient(checkbox) {
             ingredients[index] = false;
         }
     }
-    alert(noodles);
+}
+
+function findRecipes() {
+    var recipes = [1, 2, 3];
+    if (ingredients[0]) {
+        recipes[0] = "soya";
+    }
+    alert("Please see recipes n. " + recipes + "!")
 }
