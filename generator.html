@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
 
+    <script type="text/javascript" src="generate.js"></script>
+
 </head>
 <!-- Add inline style to the body for the page background -->
 
@@ -31,45 +33,60 @@
         </div>
         <div class="generator" id="generator">
             <div class="big-text">What do you have in your fridge?</div>
+            <fieldset>
+                <legend>Choose your noodle :</legend>
+                <div class="tickbox">
+                    <input type="checkbox" id="noodle0" name="noodle" value="0" onclick="hasIngredient(this)">
+                    <label>Ramen</label>
+                </div>
+                <div class="tickbox">
+                    <input type="checkbox" id="noodle1" name="noodle" value="1" onclick="hasIngredient(this)">
+                    <label>Soba</label>
+                </div>
+                <div class="tickbox">
+                    <input type="checkbox" id="noodle2" name="noodle" value="2" onclick="hasIngredient(this)">
+                    <label>Udon</label>
+                </div>
+            </fieldset>
             <div class="tickbox">
-                <input type="checkbox" id="ingredient0" name="ingredient" value="0">
-                <label for="ingredient1">Soy sauce</label>
+                <input type="checkbox" id="ingredient0" name="ingredient" value="0" onclick="hasIngredient(this)">
+                <label>Soy sauce</label>
             </div>
             <div class="tickbox">
-                <input type="checkbox" id="ingredient1" name="ingredient" value="1">
-                <label for="ingredient1">Spring onions</label>
+                <input type="checkbox" id="ingredient1" name="ingredient" value="1" onclick="hasIngredient(this)">
+                <label>Spring onions</label>
             </div>
             <div class="tickbox">
-                <input type="checkbox" id="ingredient2" name="ingredient" value="2">
-                <label for="ingredient1">Cheese</label>
+                <input type="checkbox" id="ingredient2" name="ingredient" value="2" onclick="hasIngredient(this)">
+                <label>Cheese</label>
             </div>
             <div class="tickbox">
-                <input type="checkbox" id="ingredient3" name="ingredient" value="3">
-                <label for="ingredient1">Flavour packet of choice</label>
+                <input type="checkbox" id="ingredient3" name="ingredient" value="3" onclick="hasIngredient(this)">
+                <label>Flavour packet of choice</label>
             </div>
             <div class="tickbox">
-                <input type="checkbox" id="ingredient4" name="ingredient" value="4">
-                <label for="ingredient1">Milk (any type)</label>
+                <input type="checkbox" id="ingredient4" name="ingredient" value="4" onclick="hasIngredient(this)">
+                <label>Milk (any type)</label>
             </div>
             <div class="tickbox">
-                <input type="checkbox" id="ingredient5" name="ingredient" value="5">
-                <label for="ingredient1">Butter</label>
+                <input type="checkbox" id="ingredient5" name="ingredient" value="5" onclick="hasIngredient(this)">
+                <label>Butter</label>
             </div>
             <div class="tickbox">
-                <input type="checkbox" id="ingredient6" name="ingredient" value="6">
-                <label for="ingredient1">Chicken</label>
+                <input type="checkbox" id="ingredient6" name="ingredient" value="6" onclick="hasIngredient(this)">
+                <label>Chicken</label>
             </div>
             <div class="tickbox">
-                <input type="checkbox" id="ingredient7" name="ingredient" value="7">
-                <label for="ingredient1">Tofu</label>
+                <input type="checkbox" id="ingredient7" name="ingredient" value="7" onclick="hasIngredient(this)">
+                <label>Tofu</label>
             </div>
             <div class="tickbox">
-                <input type="checkbox" id="ingredient8" name="ingredient" value="8">
-                <label for="ingredient1">Beef</label>
+                <input type="checkbox" id="ingredient8" name="ingredient" value="8" onclick="hasIngredient(this)">
+                <label>Beef</label>
             </div>
             <div class="tickbox">
-                <input type="checkbox" id="ingredient9" name="ingredient" value="9">
-                <label for="ingredient1">Egg</label>
+                <input type="checkbox" id="ingredient9" name="ingredient" value="9" onclick="hasIngredient(this)">
+                <label>Egg</label>
             </div>
 
             <a class="big-button" href="">Feed me!</a>
