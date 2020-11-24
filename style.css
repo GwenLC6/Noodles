@@ -57,7 +57,8 @@ We want the cover to appear in the center of the page, and have everything in it
     right: 0;
 
     /* This element will now have a fixed height of 300px */
-    height: 300px;
+    height: 250px;
+    width: 1000px;
 
     /*
     This tells the browser to select the margin for us on all sides.
@@ -67,6 +68,9 @@ We want the cover to appear in the center of the page, and have everything in it
 
     text-align: center;
     color: rgb(255, 255, 255);
+
+    background-color: rgb(63, 15, 15, 0.7);
+    border-radius: 5%;
 }
 
 .big-button {
