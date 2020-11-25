@@ -26,3 +26,7 @@ function findRecipes() {
     }
     alert("Please see recipes n. " + recipes + "!")
 }
+
+function showRecipes() {
+    document.getElementById("recipe-results").style.display = "block";
+}
