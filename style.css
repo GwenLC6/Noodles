@@ -222,6 +222,7 @@ img.opacity:hover {
     padding: 5%;
     padding-top: 2%;
     padding-bottom: 2%;
+    max-width: 80%;
     background-color: rgb(247, 227, 210);
 }
 
@@ -229,4 +230,17 @@ img.opacity:hover {
     padding-left: 15px;
     padding-bottom: 0px;
     padding-top: 5px;
+}
+
+.modal {
+    display: none;
+    background-color: rgba(63, 15, 15, 0.479);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 600px;
+    max-height: 80%;
+    width: 500px;
+    max-width: 80%;
 }
