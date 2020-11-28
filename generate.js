@@ -22,11 +22,7 @@ function hasIngredient(checkbox) {
 function findRecipes() {
     var recipes = [1, 2, 3];
     if (ingredients[0]) {
-        recipes[0] = "soya";
+        recipes[0] = "soy sauce";
+        alert("Please see recipes n. " + recipes + "!")
     }
-    alert("Please see recipes n. " + recipes + "!")
-}
-
-function showRecipes() {
-    document.getElementById("recipe-results").style.display = "block";
 }
