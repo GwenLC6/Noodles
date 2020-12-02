@@ -217,6 +217,21 @@ img.opacity:hover {
     padding-bottom: 15px;
 }
 
+.big-text2 {
+    color: rgb(247, 227, 210);
+    font-size: 25px;
+    padding: 20px;
+    margin: auto;
+    width: fit-content;
+}
+
+.light {
+    color: rgb(247, 227, 210);
+    font-size: 18px;
+    padding: 10px;
+    margin-left: 10px;
+}
+
 .generator {
     border-radius: 10px;
     padding: 5%;
@@ -234,15 +249,22 @@ img.opacity:hover {
 
 .modal {
     display: none;
-    background-color: rgba(63, 15, 15, 0.479);
+    background-color: rgba(63, 15, 15, 0.952);
+    border-radius:6px;
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    bottom: 10%;
+    left: 20%;
+    right: 20%;
     height: 600px;
     max-height: 80%;
-    width: 500px;
-    max-width: 80%;
+    width: 900px;
+    max-width: 60%;
+}
+
+.close {
+    float: right;
+    border-radius:30px;
+    background-color: rgb(247, 227, 210);
 }
 
 .h3 {

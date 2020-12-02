@@ -48,26 +48,9 @@
                 </div>
                 <div class="tickbox">
                     <input type="checkbox" id="noodle2" name="noodle" value="2" onclick="hasIngredient(this)">
-                    <label>Udon</label>
-                </div>
-
-                <div class="tickbox">
-                    <input type="checkbox" id="noodle2" name="noodle" value="3" onclick="hasIngredient(this)">
                     <label>Pasta</label>
                 </div>
             </fieldset>
-            <div class="tickbox">
-                <input type="checkbox" id="ingredient0" name="ingredient" value="0" onclick="hasIngredient(this)">
-                <label>Soy sauce</label>
-            </div>
-            <div class="tickbox">
-                <input type="checkbox" id="ingredient1" name="ingredient" value="1" onclick="hasIngredient(this)">
-                <label>Spring onions</label>
-            </div>
-            <div class="tickbox">
-                <input type="checkbox" id="ingredient2" name="ingredient" value="2" onclick="hasIngredient(this)">
-                <label>Cheese</label>
-            </div>
             <div class="tickbox">
                 <input type="checkbox" id="ingredient3" name="ingredient" value="3" onclick="hasIngredient(this)">
                 <label>Flavour packet of choice</label>
@@ -77,34 +60,8 @@
                 <label>Peanut Butter</label>
             </div>
             <div class="tickbox">
-                <input type="checkbox" id="ingredient5" name="ingredient" value="5" onclick="hasIngredient(this)">
-                <label>Chili Sauce/Oil</label>
-            </div>
-            <div class="tickbox">
-                <input type="checkbox" id="ingredient6" name="ingredient" value="6" onclick="hasIngredient(this)">
-                <label>Chicken</label>
-            </div>
-            <div class="tickbox">
                 <input type="checkbox" id="ingredient7" name="ingredient" value="7" onclick="hasIngredient(this)">
                 <label>Tofu</label>
-            </div>
-            <div class="tickbox">
-                <input type="checkbox" id="ingredient8" name="ingredient" value="8" onclick="hasIngredient(this)">
-                <label>Beef</label>
-            </div>
-            <div class="tickbox">
-                <input type="checkbox" id="ingredient9" name="ingredient" value="9" onclick="hasIngredient(this)">
-                <label>Egg</label>
-            </div>
-
-            <div class="tickbox">
-                <input type="checkbox" id="ingredient9" name="ingredient" value="10" onclick="hasIngredient(this)">
-                <label>Onion</label>
-            </div>
-
-            <div class="tickbox">
-                <input type="checkbox" id="ingredient9" name="ingredient" value="11" onclick="hasIngredient(this)">
-                <label>Garlic</label>
             </div>
 
             <div class="tickbox">
@@ -112,37 +69,18 @@
                 <label>Vegetables</label>
             </div>
 
-            <div class="tickbox">
-                <input type="checkbox" id="ingredient9" name="ingredient" value="13" onclick="hasIngredient(this)">
-                <label>Curry Powder</label>
-            </div>
-
-            <div class="tickbox">
-                <input type="checkbox" id="ingredient9" name="ingredient" value="14" onclick="hasIngredient(this)">
-                <label>Bacon</label>
-            </div>
-
-            <div class="tickbox">
-                <input type="checkbox" id="ingredient9" name="ingredient" value="15" onclick="hasIngredient(this)">
-                <label>Miso sauce</label>
-            </div>
-
-            <div class="tickbox">
-                <input type="checkbox" id="ingredient9" name="ingredient" value="16" onclick="hasIngredient(this)">
-                <label>Oyster sauce</label>
-            </div>
-
-            <div class="tickbox">
-                <input type="checkbox" id="ingredient9" name="ingredient" value="17" onclick="hasIngredient(this)">
-                <label>Maple syrup</label>
-            </div>
-            <a class="big-button" onclick="showRecipes()">Feed me!</a>
+            <a class="big-button" onclick="findRecipes()">Feed me!</a>
 
         </div>
 
     </div>
 
     <div class="modal" id="recipe-results">
+        <button type="button" class="close" id="closeResults" onclick="closeResults()"> x </button>
+        <div class="big-text2">Choose your recipe!</div>
+        <div id="recipe-results2">
+
+        </div>
 
     </div>
         
